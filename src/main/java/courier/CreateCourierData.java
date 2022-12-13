@@ -1,3 +1,5 @@
+package courier;
+
 public class CreateCourierData {
 
     private String login;
