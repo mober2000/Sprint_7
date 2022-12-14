@@ -4,16 +4,16 @@ import java.util.List;
 
 public class OrderList {
 
-    private List<Orders> orders;
+    private List<Order> orders;
     private PageInfo pageInfo;
     private List<AvailableStations> availableStations;
 
-    public List<Orders> getOrder() {
+    public List<Order> getOrders() {
         return orders;
     }
 
-    public void setOrder(List<Orders> order) {
-        this.orders = order;
+    public void setOrders(List<Order> order) {
+        this.orders = orders;
     }
 
     public PageInfo getPageInfo() {

@@ -1,3 +1,5 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
 import order.CreateOrderData;
@@ -37,6 +39,8 @@ public class CreateOrderTests {
     }
 
     @Test
+    @DisplayName("Create Order")
+    @Description("Проверяем создается ли заказ с двумя цветами, одним цветом, без указания цвета")
     public void CreateOrder() {
         CreateOrderData createOrderData = new CreateOrderData("Alexey","Chebanov","Проспект мира, дом 5 корпус А", "Сокольники", "+7 999 888 77 66", 5, "07-04-2000", "Просьба везди аккуратно", color);
         ValidatableResponse responseCreate =

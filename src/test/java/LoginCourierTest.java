@@ -1,6 +1,8 @@
 import courier.CourierGenerator;
 import courier.CreateCourierData;
 import courier.LoginCourierData;
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
 import org.junit.Before;
@@ -19,6 +21,8 @@ public class LoginCourierTest {
     }
 
     @Test
+    @DisplayName("Enable login courier test")
+    @Description("Проверяем можно ли авторизоваться в аккаунте")
     public void enableLoginCourierTest() {
         String randomLogin = generator.randomLogin();
 
@@ -50,6 +54,8 @@ public class LoginCourierTest {
     }
 
         @Test
+        @DisplayName("Null Fields Login Courier Test")
+        @Description("Проверяем поведение api при авторизации без логина либо без пароля")
         public void nullFieldsLoginCourierTest(){
             String randomLogin = generator.randomLogin();
 
@@ -81,6 +87,8 @@ public class LoginCourierTest {
         }
 
     @Test
+    @DisplayName("Not Existing Fields Login Courier Test")
+    @Description("Проверяем поведение api при авторизации с несуществующими логином или паролем")
     public void notExistingFieldsLoginCourierTest(){
         String randomLogin = generator.randomLogin();
 

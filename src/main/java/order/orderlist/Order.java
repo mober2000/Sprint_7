@@ -2,7 +2,7 @@ package order.orderlist;
 
 import java.util.List;
 
-public class Orders {
+public class Order {
 
     private int id;
     private String courierId;
@@ -18,6 +18,7 @@ public class Orders {
     private String comment;
     private String createdAt;
     private String updatedAt;
+    private int status;
 
     public int getId() {
         return id;
@@ -139,6 +140,5 @@ public class Orders {
         this.status = status;
     }
 
-    private int status;
 
 }

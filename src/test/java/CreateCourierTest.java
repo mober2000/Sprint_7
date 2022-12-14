@@ -1,5 +1,8 @@
 import courier.CourierGenerator;
 import courier.CreateCourierData;
+import io.qameta.allure.Description;
+import io.qameta.allure.Step;
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.ValidatableResponse;
 import org.junit.Before;
@@ -18,7 +21,10 @@ public class CreateCourierTest {
 
 
     @Test
+    @DisplayName("Create Courier Test")
+    @Description("Проверяем создается ли курьер и нельзя ли его создать повторно")
     public void createCourierTest() {
+
 
         String randomLogin = generator.randomLogin();
 
@@ -50,6 +56,8 @@ public class CreateCourierTest {
     }
 
         @Test
+        @DisplayName("Create Null Fields Courier Test")
+        @Description("Проверяем создается ли курьер с пустыми полями пароля или логина")
         public void createNullFieldsCourierTest() {
             String randomLogin = generator.randomLogin();
 

@@ -3,6 +3,7 @@ package order.orderlist;
 public class AvailableStations {
     private String name;
     private String number;
+    private String color;
 
     public String getName() {
         return name;
@@ -28,6 +29,6 @@ public class AvailableStations {
         this.color = color;
     }
 
-    private String color;
+
 
 }
