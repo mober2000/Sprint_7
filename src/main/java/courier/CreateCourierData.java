@@ -1,11 +1,9 @@
 package courier;
 
 public class CreateCourierData {
-
     private String login;
     private String password;
     private String firstName;
-
 
     public CreateCourierData(String login, String password, String firstName) {
         this.login = login;
@@ -36,6 +34,4 @@ public class CreateCourierData {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
-
 }

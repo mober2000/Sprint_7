@@ -3,7 +3,6 @@ package order.orderlist;
 import java.util.List;
 
 public class Order {
-
     private int id;
     private String courierId;
     private String firstName;
@@ -139,6 +138,4 @@ public class Order {
     public void setStatus(int status) {
         this.status = status;
     }
-
-
 }

@@ -3,7 +3,15 @@ package order;
 import java.util.List;
 
 public class CreateOrderData {
-
+    private String firstName;
+    private String lastName;
+    private String address;
+    private String metroStation;
+    private String phone;
+    private int rentTime;
+    private String deliveryDate;
+    private String comment;
+    private List<String> color;
 
     public CreateOrderData(String firstName, String lastName, String address, String metroStation, String phone, int rentTime, String deliveryDate, String comment, List<String> color) {
         this.firstName = firstName;
@@ -16,16 +24,6 @@ public class CreateOrderData {
         this.comment = comment;
         this.color = color;
     }
-
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String metroStation;
-    private String phone;
-    private int rentTime;
-    private String deliveryDate;
-    private String comment;
-    private List<String> color;
 
     public String getFirstName() {
         return firstName;
@@ -98,5 +96,4 @@ public class CreateOrderData {
     public void setColor(List<String> color) {
         this.color = color;
     }
-
 }

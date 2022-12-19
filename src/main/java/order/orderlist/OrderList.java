@@ -3,7 +3,6 @@ package order.orderlist;
 import java.util.List;
 
 public class OrderList {
-
     private List<Order> orders;
     private PageInfo pageInfo;
     private List<AvailableStations> availableStations;
@@ -31,5 +30,4 @@ public class OrderList {
     public void setAvailableStations(List<AvailableStations> availableStations) {
         this.availableStations = availableStations;
     }
-
 }
